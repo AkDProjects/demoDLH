@@ -1,5 +1,7 @@
-package com.example.demodlh;
+package com.example.demodlh.Controllers;
 
+import com.example.demodlh.User;
+import com.example.demodlh.Views.ResultsView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -68,5 +70,14 @@ public class MainViewController {
         stage.setTitle("Login");
         stage.show();
 
+    }
+
+    @FXML
+    public void handleOpenNewWindow() throws IOException{
+        Stage newWindow = new Stage();
+        newWindow.setTitle("New Window");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("new-window.fxml"));
+        newWindow.setScene(loader.load());
+        newWindow.show();
     }
 }

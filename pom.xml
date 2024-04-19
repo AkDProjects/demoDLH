@@ -75,6 +75,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver-sync</artifactId>
+                <version>4.3.4</version>
+            </dependency>
     </dependencies>
 
     <build>
@@ -97,7 +102,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.demodlh/com.example.demodlh.HelloApplication</mainClass>
+                            <mainClass>com.example.demodlh/com.example.demodlh.Views.HelloApplication</mainClass>
                         </configuration>
                     </execution>
                 </executions>

@@ -1,5 +1,6 @@
-package com.example.demodlh;
+package com.example.demodlh.Views;
 
+import com.example.demodlh.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

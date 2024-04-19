@@ -1,2 +1,3 @@
 # Project exclude paths
+String key = "mongodb+srv://adavorengames:DLHCorphell1@cluster0.jjooh9w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 /target/

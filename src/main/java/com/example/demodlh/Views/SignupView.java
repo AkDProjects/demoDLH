@@ -1,4 +1,4 @@
-package com.example.demodlh;
+package com.example.demodlh.Views;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

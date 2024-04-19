@@ -1,4 +1,4 @@
-package com.example.demodlh;
+package com.example.demodlh.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,6 +17,7 @@ public class SceneController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    private GridPane gridPane;
 
 
     @FXML
@@ -36,5 +38,13 @@ public class SceneController {
         stage.setScene(scene);
         stage.setTitle("Signup");
         stage.show();
+    }
+    @FXML
+    public void handleOpenNewWindow() throws IOException{
+        Stage newWindow = new Stage();
+        newWindow.setTitle("New Window");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("new-window.fxml"));
+        gridPane = loader.load();
+        newWindow.show();
     }
 }

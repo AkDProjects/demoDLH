@@ -9,8 +9,5 @@
         <module name="demoDLH" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="demoDLH" target="0" />
-    </bytecodeTargetLevel>
   </component>
 </project>
